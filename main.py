@@ -7,6 +7,19 @@ def exibirMenu():
     print("5 - Alterar nome de usuário cadastrado.")
     print("6 - Finalização programa.")
 
+def exibirAlfabeto(listaCadastro):
+    ordenado=sorted(listaCadastro)
+    print(ordenado)
+
+def verificaUsuario(Nome):
+    backup = listaNomes 
+    if Nome in backup:
+        print(Nome,"Está na lista")
+    else:
+         print("Não encontrado")
+        
+  
+    
 def main():
     print("Bem vindo ao sistema de cadastro de usuário da UAM.")
     opçãoProcedimento = 0
