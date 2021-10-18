@@ -104,5 +104,6 @@ def main():
         else:
             print("Opção Invalida, digite novamente.")
 
+
 if __name__ == "__main__":
     main()
