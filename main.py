@@ -7,11 +7,22 @@ def exibirMenu():
     print("5 - Alterar nome de usuário cadastrado.")
     print("6 - Finalização programa.")
 
+def exibirUsuariosCadastrados():
+    print(usuarios)
+
+def cadastrarUsuario():
+    usuario_nome = input('Digite o nome do usuario: ')
+    usuario_email = input('Digite o email do usuario: ')
+    usuario_dados = (usuario_nome,usuario_email)
+    usuarios.append(usuario_dados)
+    print(usuarios)
+    print('Usuario Adicionado')
+
 def exibirUsuariosEmOrdemAlfabetica(listaCadastro):
     ordenado=sorted(listaCadastro)
     print(ordenado)
 
-def verificarUsuario(Nome):
+def procurarUsuario(Nome):
     backup = listaNomes 
     if Nome in backup:
         print(Nome,"Está na lista")
@@ -28,9 +39,8 @@ def main():
         except:
             opçãoProcedimento == 0
         if opçãoProcedimento == 1:
-            print("H1")
             #H1
-            #cadastrarUsuario()
+            cadastrarUsuario()
         elif opçãoProcedimento == 2:
             formaDeExibicaoUsuariosCadastrados = 0
             print("1 - Exibir em ordem de cadastro")
@@ -41,9 +51,8 @@ def main():
                 except:
                     formaDeExibicaoUsuariosCadastrados = 0
                 if formaDeExibicaoUsuariosCadastrados == 1:
-                    print("H2")
                     #H2
-                    #exibirUsuariosCadastrados()
+                    exibirUsuariosCadastrados()
                 elif formaDeExibicaoUsuariosCadastrados == 2:
                     #H3
                     exibirUsuariosEmOrdemAlfabetica()
@@ -51,7 +60,7 @@ def main():
                     print("Opção inválida, digite novamente.")
         elif opçãoProcedimento == 3:
             #H4
-            verificarUsuario()
+            procurarUsuario()
         elif opçãoProcedimento == 4:
             #H5
             #deletarUsuario()
