@@ -22,13 +22,20 @@ H5.: Como gestor do sistema gostaria poder remover um usuário cadastrado, busca
 H6.: Como gestor do sistema gostaria de poder alterar o nome de um usuário cadastrado no sistema,
 buscando-o por seu e-mail.
 
+
 Seguindo a logica:
 
 • Uma ou mais estruturas de dados do tipo lista, para armazenar os dados dos inscritos; e/ou
+
 • Uma ou mais estruturas de dados do tipo dicionário.
+
 • Utilizar funções, buscando respeitar a separação de controle/lógica de visão/interação com o
 usuário.
+
 • Utilizar funções de string e de lista.
+
 • Utilizar ForEach
+
 • Implementar os menus e mensagens necessárias para interagir com o usuário.
+
 • Atender as histórias de usuário.
