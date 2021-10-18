@@ -7,28 +7,19 @@ def exibirMenu():
     print("5 - Alterar nome de usuário cadastrado.")
     print("6 - Finalização programa.")
 
-def exibirUsuariosCadastrados():
-    print(usuarios)
+def deletarUsuario(listaEmails):
+    print("digite o email que voce gostaria de deletar: ")
+    emailDeletado = input()
+    listaEmails.remove(emailDeletado),
 
-def cadastrarUsuario():
-    usuario_nome = input('Digite o nome do usuario: ')
-    usuario_email = input('Digite o email do usuario: ')
-    usuario_dados = (usuario_nome,usuario_email)
-    usuarios.append(usuario_dados)
-    print(usuarios)
-    print('Usuario Adicionado')
+def alterarUsuarioCadastrado(listaEmails):
+    print("digite o email que voce gostaria de alterar: ")
+    emailAlterado = input()
+    listaEmails.remove(emailAlterado)
+    print("digite o novo email")
+    novoEmail = input()
+    listaEmails.append(novoEmail)
 
-def exibirUsuariosEmOrdemAlfabetica(listaCadastro):
-    ordenado=sorted(listaCadastro)
-    print(ordenado)
-
-def procurarUsuario(Nome):
-    backup = listaNomes 
-    if Nome in backup:
-        print(Nome,"Está na lista")
-    else:
-         print("Não encontrado")
-    
 def main():
     print("Bem vindo ao sistema de cadastro de usuário da UAM.")
     opçãoProcedimento = 0
@@ -39,8 +30,9 @@ def main():
         except:
             opçãoProcedimento == 0
         if opçãoProcedimento == 1:
+            print("H1")
             #H1
-            cadastrarUsuario()
+            #cadastrarUsuario()
         elif opçãoProcedimento == 2:
             formaDeExibicaoUsuariosCadastrados = 0
             print("1 - Exibir em ordem de cadastro")
@@ -51,16 +43,19 @@ def main():
                 except:
                     formaDeExibicaoUsuariosCadastrados = 0
                 if formaDeExibicaoUsuariosCadastrados == 1:
+                    print("H2")
                     #H2
-                    exibirUsuariosCadastrados()
+                    #exibirUsuariosCadastrados()
                 elif formaDeExibicaoUsuariosCadastrados == 2:
+                    print("H3")
                     #H3
-                    exibirUsuariosEmOrdemAlfabetica()
+                    #exibirUsuariosEmOrdemAlfabetica()
                 else:
                     print("Opção inválida, digite novamente.")
         elif opçãoProcedimento == 3:
             #H4
-            procurarUsuario()
+            #verificarUsuario()
+            print("H4")
         elif opçãoProcedimento == 4:
             #H5
             #deletarUsuario()
