@@ -1,5 +1,15 @@
 # cadastrosDeUsuarios
- Criação de um script que cadastra e remove os usuários de uma variavel do tipo lista (utilizada como banco de dados).
+Criação de um script que cadastra e remove os usuários de uma variavel do tipo lista (utilizada como banco de dados).
+
+Desenvolvido por: 
+Andre Luiz Alves Bonfim RA:20965749;
+
+Bruno dos Santos lara RA:20619132;
+
+Gustavo Guimaraes Brandao RA:21417772;
+
+Ygor Prospero Queiroz RA: 21558366.
+
 
 Para esse problema temos:
 
