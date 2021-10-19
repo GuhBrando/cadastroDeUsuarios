@@ -1,3 +1,9 @@
+#Desenvolvido por: 
+# Andre Luiz Alves Bonfim    RA:20965749;
+# Bruno dos Santos lara      RA:20619132;
+# Gustavo Guimaraes Brandao  RA:21417772;
+# Ygor Prospero Queiroz      RA: 21558366.
+
 def exibirMenu():
     print("----- Opções de procedimento -----")
     print("1 - Cadastrar novos usuários.")
